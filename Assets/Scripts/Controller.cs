@@ -21,24 +21,24 @@ public class Controller : MonoBehaviour
         } else if (Input.GetKeyDown(KeyCode.LeftArrow) || Input.GetKeyDown(KeyCode.A))
         {
             Vector3 scale = transform.localScale;
-            Debug.Log("1 left" + scale.x);
+ 
             if (scale.x > 0)
             {
                 scale.x = -scale.x;
                 transform.localScale = scale;
             }
-            Debug.Log("2 left" + scale.x);
+ 
             transform.position = transform.position - new Vector3(2.0f, 0, 0);
         } else if (Input.GetKeyDown(KeyCode.RightArrow) || Input.GetKeyDown(KeyCode.D))
         {
             Vector3 scale = transform.localScale;
-            Debug.Log("1 right" + scale.x);
+
             if (scale.x < 0)
             {
                 scale.x = -scale.x;
                 transform.localScale = scale;
             }
-            Debug.Log("2 right" + scale.x);
+
             transform.position = transform.position + new Vector3(2.0f, 0, 0);
         }
     }
